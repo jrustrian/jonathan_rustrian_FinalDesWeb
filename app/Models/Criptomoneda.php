@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Criptomoneda extends Model
 {
     use HasFactory;
+    protected $table = 'criptomoneda';
+
+    protected $fillable = [
+        'logotipo',
+        'nombre',
+        'precio',
+        'descripcion',
+        'lenguaje_id',
+        'fecha_creacion'
+    ];
 }
